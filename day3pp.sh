@@ -27,13 +27,13 @@ b. Print only EmployeeName  and  TotalPay
 
 2.	What is aggregate TotalPay of employees whose jobtitle is ‘CAPTAIN’
 
-    $ cat data.csv | grep CAPTAIN | awk  ' {sum+= $7} END {print sum/NR} '
+         $ cat data.csv | grep CAPTAIN | awk  ' {sum+= $7} END {print sum/NR} '
 
-a.	Read data file ‘data.csv’ from command line and extract row which have ‘CAPTAIN’   in column ‘JobTitle
+    a.	Read data file ‘data.csv’ from command line and extract row which have ‘CAPTAIN’   in column ‘JobTitle
 
-$ cat data.csv | grep CAPTAIN | awk  ' {print $3} {print $0}'
+         $ cat data.csv | grep CAPTAIN | awk  ' {print $3} {print $0}'
 
-b.	Extract TotalPay and calculate sum and Print the result on terminal
+    b.	Extract TotalPay and calculate sum and Print the result on terminal
 
                  $ cat data.csv | awk  ' {sum+= $7} END {print sum} '
 
